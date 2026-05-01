@@ -1,25 +1,9 @@
 # Dopamine
 
-## User Loves
+**Loves:** Clean architecture, fast iteration, production UI, modular systems, clear naming.
 
-- Clean architecture
-- Fast iteration
-- Production-ready UI
-- Modular systems
-- Clear naming conventions
+**Hates:** Overengineering, huge files, unrelated AI edits, placeholders, early deep abstraction.
 
-## User Hates
+**AI mistakes:** Record wrong behavior + fix.
 
-- Overengineering
-- Giant unreadable files
-- AI changing unrelated code
-- Placeholder implementations
-- Deep abstraction too early
-
-## AI Mistakes
-
-Record incorrect AI behavior and the preferred correction path.
-
-## Reinforcement
-
-Track patterns that consistently produce high-quality outcomes.
+**Reinforce:** Patterns that reliably produce quality.

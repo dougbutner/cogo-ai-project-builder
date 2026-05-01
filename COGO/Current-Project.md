@@ -2,25 +2,20 @@
 
 ## Objective
 
-Describe the active project goal here.
+Goal (one sentence).
 
 ## Current Focus
 
-Describe the feature or system currently being worked on.
+What we're building now.
 
 ## Recent Decisions
 
-- Important architectural decisions
-- Stack changes
-- Workflow updates
+- Architecture, stack, workflow calls.
 
 ## Blockers
 
-- Known technical issues
-- Missing requirements
-- Pending research
+- Technical gaps, missing reqs, research.
 
 ## Next Steps
 
-- Immediate implementation tasks
-- Short-term priorities
+- Immediate tasks, near-term priorities.

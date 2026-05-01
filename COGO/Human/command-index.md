@@ -1,27 +1,26 @@
-# COGO Command Index
+# Command index
 
-One-line map of human commands to instruction files. COGO loads the matching file and runs its workflow.
+Route intent → load file → run workflow. Operator notes: `Human/HUMAN-README.md`.
 
-| Command | Purpose | Instruction file |
+| Command | Typical triggers | Instruction |
 | --- | --- | --- |
-| `/bootstrap-project` | Greenfield: scaffold context and initial structure | `Human/bootstrap-project.md` |
-| `/install-project` | Brownfield: align COGO with an existing repo | `Human/install-project.md` (Workflow A) |
-| `/rewrite-project` | Migrate or rewrite to a different stack | `Human/install-project.md` (Workflow B) |
-| `/handoff` | Summary for another human or chat session | `Human/handoff.md` |
-| `/review` | Architecture or change review | `Human/review.md` |
-| `/test-plan` | Testing strategy for a change or feature | `Human/test-plan.md` |
-| `/release-notes` | User-facing or internal release notes | `Human/release-notes.md` |
+| `/bootstrap-project` | slash; "greenfield"; "empty repo"; "new project" | `Human/bootstrap-project.md` |
+| `/install-project` | slash; "install cogo"; "set up cogo for this repo" | `Human/install-project.md` **Workflow A** |
+| `/rewrite-project` | slash; "rewrite to [stack]"; "migrate from [a] to [b]" | `Human/install-project.md` **Workflow B** |
+| `/handoff` | slash; "handoff"; "next session should know" | `Human/handoff.md` |
+| `/review` | slash; "review PR"; "review architecture" | `Human/review.md` |
+| `/test-plan` | slash; "what tests" | `Human/test-plan.md` |
+| `/release-notes` | slash; "changelog"; "release notes" | `Human/release-notes.md` |
 
-Natural-language triggers (no required slash): production outage, incident response, urgent prod/staging debug → `Human/incident-or-debug.md` (see `COGO.md` Command Dispatch).
+**Natural language (no slash):** prod outage / incident / urgent prod or staging debug → `Human/incident-or-debug.md`.
 
-## Supporting docs (no slash command required)
+## Supporting refs
 
-| Topic | File |
+| Need | File |
 | --- | --- |
-| When to stop and ask | `Human/safety-and-confirmations.md` |
-| Repo stack signals | `Human/stack-detection-checklist.md` |
-| Incremental migration patterns | `Human/migration-playbook.md` |
-| One-shot constraints for humans | `Human/project-constraints-template.md` |
-| Production debugging | `Human/incident-or-debug.md` |
-| Env vars and secrets scratchpad | `Human/example-env.md` |
-| COGO bundle changes | `Human/CHANGELOG.md` |
+| Confirm before risky ops | `Human/safety-and-confirmations.md` |
+| Repo/stack signals | `Human/stack-detection-checklist.md` |
+| Migration patterns | `Human/migration-playbook.md` |
+| One-shot constraints | `Human/project-constraints-template.md` |
+| Env **names** only (copy to real `.env`) | `Human/example-env.md` |
+| Bundle history | `Human/CHANGELOG.md` |

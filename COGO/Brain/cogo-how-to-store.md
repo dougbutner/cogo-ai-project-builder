@@ -1,27 +1,7 @@
-# Memory Storage Rules
+# Memory storage
 
-## Store
+**Store:** Long-term decisions, prefs, repeated corrections, lessons, architecture.
 
-- Long-term decisions
-- Stable preferences
-- Repeated corrections
-- High-value engineering lessons
-- Important architecture choices
+**Skip:** Ephemeral tasks, verbose logs, duplicates, filler.
 
-## Avoid Storing
-
-- Temporary tasks
-- Verbose logs
-- Duplicate information
-- Conversational filler
-
-## Compression Rules
-
-- Prefer concise summaries.
-- Prefer principles over examples.
-- Keep memory highly actionable.
-
-## Updating Rules
-
-- Update memory only when information has long-term value.
-- Reinforce repeated preferences.
+**Rules:** Short summaries; update only long-term value; reinforce repeats.
