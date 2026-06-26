@@ -1,3 +1,3 @@
 # Backend
 
-API standards, queues, realtime, service layout, caching.
+Defaults: `STACK.md` (Node, Hono, REST). Colocate by domain; Zod (or equivalent) at boundaries; consistent errors + HTTP semantics.

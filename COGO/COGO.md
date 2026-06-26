@@ -13,20 +13,11 @@ Understand goal → constraints → plan → scaffold → build incrementally �
 ## Context (low tokens)
 
 - Load **only** relevant `Build/*`.
-- `Brain/` = durable prefs; `Current-Project.md` = active task.
-- Commands: `Human/command-index.md`. Human UX: `Human/HUMAN-README.md`.
+- Default tech + env conventions: `STACK.md` + `Human/example-env.md` (names only).
+- `Brain/` = durable prefs (`t|id|s|w|r` lines per `Brain/cogo-memory-format.md`); `Current-Project.md` = active task + stack overrides vs `STACK.md`.
+- Commands: `Human/command-index.md`. Human UX: [HUMAN-README.md](../HUMAN-README.md) (repo root).
 - Before destructive actions, prod changes, or secrets: `Human/safety-and-confirmations.md`.
 
 ## Command dispatch
 
-| Intent (examples) | Load |
-| --- | --- |
-| `/bootstrap-project`, greenfield, empty repo | `Human/bootstrap-project.md` |
-| `/install-project`, install COGO in repo | `Human/install-project.md` → Workflow **A** |
-| `/rewrite-project`, migrate stack | `Human/install-project.md` → Workflow **B** |
-| `/handoff`, next session summary | `Human/handoff.md` |
-| `/review` | `Human/review.md` |
-| `/test-plan` | `Human/test-plan.md` |
-| `/release-notes` | `Human/release-notes.md` |
-| Prod outage, incident, urgent staging debug | `Human/incident-or-debug.md` |
-| Unclear intent | Ask **one** clarifying question, then continue. |
+Match intent → load workflow from `Human/command-index.md`. Unclear intent → ask **one** clarifying question, then continue.

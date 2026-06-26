@@ -8,6 +8,13 @@ Goal (one sentence).
 
 What we're building now.
 
+## Stack vs `COGO/STACK.md`
+
+Blank if aligned. Else note deploy target, package manager, or divergent FE/BE/DB/auth in one line each.
+
+- Deploy / hosting:
+- Secrets location (e.g. `.env.local`, Vault, Vercel env):
+
 ## Recent Decisions
 
 - Architecture, stack, workflow calls.

@@ -2,7 +2,7 @@
 
 Triggers: slash; "greenfield"; "empty repo"; "new project".
 
-**Before scaffold:** `Human/safety-and-confirmations.md`. Objective + stack from human or propose stack.
+**Before scaffold:** `Human/safety-and-confirmations.md`. Objective + stack from human or propose from [`STACK.md`](../STACK.md).
 
 1. **Scope:** Goal, MVP, non-goals, hosting; prefs from `Brain/` or `project-constraints-template.md`.
 2. **Profile:** Fill `COGO/Current-Project.md`.

@@ -1,3 +1,3 @@
 # Memory
 
-Store: architecture/stack decisions, durable prefs, lessons, high-value patterns. Concise, actionable, principle-first.
+Append durable decisions, prefs, lessons, patterns here — **one pipe line per concept** (`t|id|s|w|r`). Spec: `Brain/cogo-memory-format.md`. Skip ephemeral tasks, duplicates, secrets.

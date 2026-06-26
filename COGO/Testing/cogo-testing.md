@@ -1,5 +1,7 @@
 # Testing
 
-Deterministic, isolated tests; behavior over implementation. Layer: unit + integration + **critical-path** e2e. Reusable fixtures; mock externals responsibly; fight flakiness.
+Defaults: `STACK.md` (**Vitest** + **Playwright** critical paths). Deterministic, isolated; behavior over implementation; reusable fixtures; mock externals responsibly; fight flakiness.
 
-**Flow:** implement → tests immediately → edge cases → regression guard.
+**Layout:** top-level `/tests` with `unit/`, `integration/`, `e2e/`, `fixtures/`, `mocks/` — prefer outside app dirs unless asked.
+
+**Flow:** implement → tests → edge cases → regression guard.

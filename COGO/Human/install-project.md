@@ -9,7 +9,7 @@ No unrelated edits. Infer stack (`stack-detection-checklist.md`). Prefer increme
 ## Workflow A — `/install-project`
 
 1. **Repo:** Scan root + configs; infer FE/BE/DB/auth/deploy (`stack-detection-checklist.md`).
-2. **Profile:** Fill `COGO/Current-Project.md` (Objective, Focus, Decisions, Blockers, Next). Update `Build/*` for detected stack. Append env **names** to `example-env.md` (no secrets).
+2. **Profile:** Fill `COGO/Current-Project.md` (Objective, Focus, **Stack vs STACK.md** when repo differs, Decisions, Blockers, Next). Update `Build/*` for detected stack. Append env **names** to `example-env.md` (no secrets).
 3. **Context:** Tie architecture to COGO docs; note constraints/prefs.
 4. **Out:** Stack summary; files touched; first recommended task.
 
@@ -21,7 +21,3 @@ No unrelated edits. Infer stack (`stack-detection-checklist.md`). Prefer increme
 2. **Plan:** Use `migration-playbook.md`. Deliver target architecture; old→new map; phased steps; data migration; test + rollback.
 3. **Execute:** Vertical slices; runnable checkpoints; tests per phase.
 4. **Out:** Done vs remaining phases; risks/blockers; next safe step.
-
-## Routing
-
-`/install-project` → A. `/rewrite-project` → B. Ambiguous → one clarifying question.

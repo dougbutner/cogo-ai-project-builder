@@ -1,6 +1,6 @@
 # Command index
 
-Route intent → load file → run workflow. Operator notes: `Human/HUMAN-README.md`.
+Route intent → load file → run workflow. Before destructive, prod-impacting, or secret ops: `Human/safety-and-confirmations.md`. Operator UX: [HUMAN-README.md](../../HUMAN-README.md).
 
 | Command | Typical triggers | Instruction |
 | --- | --- | --- |

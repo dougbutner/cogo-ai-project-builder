@@ -1,32 +1,52 @@
 # Example env (names only)
 
-Scratchpad for env **names** / safe defaults. **No real secrets.** Copy to gitignored `.env`, secret manager, or CI.
+Aligned with [`STACK.md`](../STACK.md). **No secrets in git** — copy to `.env.local` / secret manager / CI.
 
 ```bash
+# Platform
 NODE_ENV=development
-APP_NAME=
-APP_URL=http://localhost:3000
 PORT=3000
-LOG_LEVEL=debug
+
+# Next / app URL (browser + server callbacks)
+NEXT_PUBLIC_APP_URL=http://localhost:3000
+
+# Better Auth + DB (defaults in STACK)
+BETTER_AUTH_SECRET=
+BETTER_AUTH_URL=http://localhost:3000
 DATABASE_URL=postgresql://USER:PASSWORD@localhost:5432/DBNAME
-SESSION_SECRET=GENERATE_A_LONG_RANDOM_STRING
-JWT_SECRET=GENERATE_A_LONG_RANDOM_STRING
+
+# AI (when used)
+OPENAI_API_KEY=
+
+# Cache / jobs (optional)
+REDIS_URL=
+
+# OAuth / email (optional; trim unused)
 OAUTH_CLIENT_ID=
 OAUTH_CLIENT_SECRET=
 OAUTH_ISSUER_URL=
-API_KEY_EXTERNAL_SERVICE=
 SMTP_HOST=
 SMTP_PORT=
 SMTP_USER=
 SMTP_PASSWORD=
+
+# Object storage (optional)
 S3_BUCKET=
 S3_REGION=
 AWS_ACCESS_KEY_ID=
 AWS_SECRET_ACCESS_KEY=
+
+# Payments (optional)
 STRIPE_SECRET_KEY=
 STRIPE_WEBHOOK_SECRET=
+
+# Observability (optional)
+LOG_LEVEL=debug
 SENTRY_DSN=
 DATADOG_API_KEY=
+
+# Third-party APIs (optional)
+API_KEY_EXTERNAL_SERVICE=
 ```
 
-Copy needed keys → real env UI → delete unused lines → rotate anything ever leaked.
+Prune unused keys → rotate anything leaked → prefer provider-native secret names when mirroring prod.

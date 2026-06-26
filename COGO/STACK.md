@@ -1,11 +1,51 @@
 # Preferred stack
 
-- **FE:** Next.js App Router, TS, Tailwind, shadcn/ui  
-- **BE:** Node, Hono, REST-first  
-- **DB:** PostgreSQL, Drizzle  
-- **Auth:** Better Auth (+ wallet when relevant)  
-- **AI:** OpenAI, RAG, agents  
-- **Infra:** Vercel, Cloudflare, Docker  
-- **Test:** Vitest, Playwright  
+Canonical defaults for COGO-guided work. When the **repo differs**, record deltas in `Current-Project.md` (stack overrides) and capture durable choices as Brain pipe lines (`Brain/cogo-memory-format.md`).
 
-**Avoid:** Redux unless needed; over-abstraction; huge config; unreadable “enterprise” patterns.
+## Platform
+
+- **TypeScript** strict · **Node 22 LTS** · **pnpm** · LF / UTF-8
+
+## Frontend
+
+- **Next.js App Router** · **Tailwind** · **shadcn/ui**
+- Prefer **Server Components**; client components only for interactivity / browser APIs
+
+## Backend
+
+- **Hono** · **REST-first** · handlers/modules **colocated by domain**
+- Validate at boundaries (**e.g. Zod**); typed responses; consistent error shape
+
+## Data
+
+- **PostgreSQL** · **Drizzle ORM** · **versioned migrations** in-repo · indexes for hot queries
+
+## Auth
+
+- **Better Auth** · wallet/session variants **only when product requires**
+
+## AI
+
+- **OpenAI** (SDK + `OPENAI_API_KEY`) · RAG/agents **only when specified**
+
+## Deploy & hosting
+
+- App: **Vercel** · CDN/DNS/WAF: **Cloudflare** when needed · **Docker** for local parity + auxiliary services
+
+## Observability & ops
+
+- Prod errors: **Sentry** (optional) · structured logs in prod · health/readiness endpoints on services
+
+## Quality
+
+- **Vitest** (unit/integration) · **Playwright** (critical user paths only)
+- CI on PR: **lint + typecheck + tests** (adjust script names to repo)
+
+## Secrets & env
+
+- Dev: **`.env.local`** (gitignored) · prod/staging: host **secret manager**
+- Document names only in `Human/example-env.md` — never commit values
+
+## Avoid
+
+Redux unless proven need · config mega-frameworks · opaque “enterprise” layering · unrelated edits (see `COGO.md`)
